@@ -4,65 +4,108 @@ console.log("Inicio Javascript")
 
 const movies_quemado =   [
     {
-        "adult": false,
-        "backdrop_path": "/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg",
-        "genre_ids": [
-            28,
-            12,
-            53
-        ],
         "id": 299054,
-        "original_language": "en",
-        "original_title": "Expend4bles",
-        "overview": "Armed with every weapon they can get their hands on and the skills to use them, The Expendables are the world’s last line of defense and the team that gets called when all other options are off the table. But new team members with new styles and tactics are going to give “new blood” a whole new meaning.",
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
         "popularity": 3741.062,
-        "poster_path": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-        "release_date": "2023-09-15",
-        "title": "Expend4bles",
-        "video": false,
-        "vote_average": 6.4,
-        "vote_count": 364
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+
+        
     },
     {
-        "adult": false,
-        "backdrop_path": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-        "genre_ids": [
-            28,
-            53,
-            80
-        ],
-        "id": 926393,
-        "original_language": "en",
-        "original_title": "The Equalizer 3",
-        "overview": "Robert McCall finds himself at home in Southern Italy but he discovers his friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
-        "popularity": 1924.033,
-        "poster_path": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-        "release_date": "2023-08-30",
-        "title": "The Equalizer 3",
-        "video": false,
-        "vote_average": 7.3,
-        "vote_count": 1055
+        "id": 299053,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
     },
     {
-        "adult": false,
-        "backdrop_path": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-        "genre_ids": [
-            16,
-            28,
-            14
-        ],
-        "id": 1034062,
-        "original_language": "en",
-        "original_title": "Mortal Kombat Legends: Cage Match",
-        "overview": "In 1980s Hollywood, action star Johnny Cage is looking to become an A-list actor. But when his costar, Jennifer, goes missing from set, Johnny finds himself thrust into a world filled with shadows, danger, and deceit. As he embarks on a bloody journey, Johnny quickly discovers the City of Angels has more than a few devils in its midst.",
-        "popularity": 2223.43,
-        "poster_path": "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-        "release_date": "2023-10-17",
-        "title": "Mortal Kombat Legends: Cage Match",
-        "video": false,
-        "vote_average": 7.8,
-        "vote_count": 27
-    }
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299051,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+    {
+        "id": 299052,
+        "marca": "Hewlett-Packard",
+        "original_title": "HP 245 G7",
+        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
+        "popularity": 3741.062,
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "1'200,000",
+        "title": "HP 245 G7",
+    },
+
 ]
 
 
@@ -114,9 +157,9 @@ function createMovieElement(movie) {
 
 function showModal(movie) {
     // Aquí llenas la información del modal con los datos de la película
-    document.getElementById('modalTitle').textContent = "Titulo: " +movie.title;
-    document.getElementById('modalFechaLanzamiento').textContent = "Fecha estreno: " + movie.release_date;
-    document.getElementById('modalPuntuacion').textContent = "Puntuación: " + movie.vote_average;
+    document.getElementById('modalTitle').textContent = "Modelo: " +movie.title;
+    document.getElementById('modalFechaLanzamiento').textContent = "Precio: " + movie.precio;
+    document.getElementById('modalPuntuacion').textContent = "Marca: " + movie.marca;
     document.getElementById('modalPoster').src = movie.poster_path;
     document.getElementById('modalPoster').alt = movie.title;
     document.getElementById('modalOverview').textContent = movie.overview;
