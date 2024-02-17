@@ -12,7 +12,7 @@ RUN mvn clean package -DskipTests
 RUN ls /app/target/
 
 # Etapa de ejecución: Usa una imagen de OpenJDK 17 para una etapa de producción más ligera
-FROM adoptopenjdk/openjdk17:jre-17.0.2_8-alpine
+FROM openjdk:17-jdk-slim
 
 EXPOSE 8080
 
