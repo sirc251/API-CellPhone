@@ -1,0 +1,213 @@
+
+/* Estilo Imagen de las cards*/
+.pl-estilo1¨{
+    padding: 50px 0 0 0;
+    display: flex;
+}
+/* Estilo Titulos de las secciones */
+h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #f7f5f5;
+}
+/* Estilo de la linea que divide la seccion */
+hr{
+    border: 1px solid red;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.card-container .card-img-top {
+    max-width: 100%; /* Ancho máximo para las imágenes */
+    max-height: 100%; /* Altura máxima para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio del card */
+}
+/* Estilo Imagen de las cards */
+.pl-estilo1 .card img {
+    width: 100%; /* Que ocupe el 100% del contenedor*/
+    height: 100%; /* este en altura 100%r */
+    object-fit: cover; /*  */
+}
+
+
+.pl-estilo1 .card {
+    width: 20rem; /* Ancho para tarjeta */
+    height: 28rem; /* Ponemos altura fija */
+    border: 1px solid #e1e1e1; 
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente en negro */
+    color: #f7f5f5; 
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Sombra suave en blanco */
+}
+
+.pl-estilo1 .card .card-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    /* Recorta y agrega puntos suspensivos en caso de que el contenido sea extenso*/
+}
+
+.pl-estilo1 .card .card-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* Recorta y agrega puntos suspensivos en caso de que el titulo sea muy grande */
+}
+
+/* Estilo para botones "Sinopsis" */
+.pl-estilo1 .card .btn-primary {
+    background-color: #a2adb9; /* Color de fondo del botón */
+    color: #180404; /* Color de texto del botón */
+    border: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para cambios de color y sombra */
+}
+
+.pl-estilo1 .card .btn-primary:hover {
+    background-color: #bc2828; /* Cambio de color al pasar el cursor por encima */
+}
+
+.card-container{
+    display: flex;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0; /* Hace que la barra permanezca en la parte superior */
+    z-index: 2; /* Sobrepone la barra a cualquier contenido */
+}
+
+.navbar a.nav-link {
+    color: #fff; /* Color de texto de la barra */
+}
+
+.navbar a.nav-link:hover {
+    color: #721515; /* Cambio de color al poner el cursos sobre los links*/
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #fff; /* Cambio de color al pasar el cursor por encima del botón de búsqueda */
+    color: #000; /* Cambio de color de texto al pasar el cursor por encima del botón de búsqueda */
+}
+#carouselExampleFade {
+    /* Damos formato al carrusel importado de Bootstrap */
+    
+    width: 100%;
+    height: 100%; /* Altura para pantallas grandes */
+
+    margin: 0 auto;
+    max-width: 1400px;
+    }
+
+
+
+#carouselExampleFade .carousel-inner .carousel-item img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+   
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio del contenedor */
+}
+
+header {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 70vh;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+
+.container {
+    position: relative;
+    z-index: 1; /* Establece un valor z-index más alto para las tarjetas */
+}
+
+body{
+    background-color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Estilo Imagen de las cards */
+.card-img-container {
+    max-height: 15rem; /* Altura máxima para el contenedor de imágenes */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que no quepa */
+}
+
+.card-img-container img {
+    width: 100%; /* Ancho al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio del contenedor */
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000;/* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #3b3b3b;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: auto;
+    margin: 5% auto;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Cambio importante aquí */
+    align-items: center; /* Asegura que los elementos hijos se centren */
+  }
+  
+  /* Estilo para el botón cerrar */
+  .close-button {
+    position: absolute;
+    top: 10px; /* Ajusta según necesites */
+    right: 20px; /* Ajusta según necesites */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #modalTitle {
+    text-align: center; /* Centra el título */
+    width: auto; /* Ocupa el ancho completo del contenedor */
+    margin-top: 0; 
+    margin-bottom: 20px; /* Espacio entre el título y el resto del contenido */
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+  }
+  
+  #modalPoster {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  #modalOverview {
+    color: #aaa;
+    flex-grow: 1;
+  }
