@@ -180,13 +180,13 @@ body{
     position: absolute;
     top: 10px; /* Ajusta según necesites */
     right: 20px; /* Ajusta según necesites */
-    color: #aaa;
+    color: #050505;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
   }
   
-  #modalTitle {
+  #modalModelo {
     text-align: center; /* Centra el título */
     width: auto; /* Ocupa el ancho completo del contenedor */
     margin-top: 0; 
@@ -199,15 +199,22 @@ body{
     align-items: flex-start;
     width: 100%; /* Ocupa el ancho completo del contenedor */
   }
+
+  .contenedor-imagen{
+    width: 100%;
+    height: 100%;
+  }
   
   #modalPoster {
-    width: 300px;
-    height: auto;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
     margin-right: 20px;
   }
   
   #modalOverview {
+    width: 100%;
+    height: 100%;
     color: #aaa;
-    flex-grow: 1;
+    flex-grow: -1;
   }

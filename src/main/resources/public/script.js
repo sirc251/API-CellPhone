@@ -1,188 +1,121 @@
 console.log("Inicio Javascript")
 
 
-
-const movies_quemado =   [
+//Aquí están la información de los portatiles
+const pc_portatiles =   [
     {
-        "id": 299054,
+        "id": 1,
         "marca": "Hewlett-Packard",
         "original_title": "HP 245 G7",
         "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
-        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
-
-        
-    },
-    {
-        "id": 299053,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
         "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
         "precio": "1'200,000",
         "title": "HP 245 G7",
     },
     {
-        "id": 299052,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
+        "id": 2,
+        "marca": "LENOVO",
+        "original_title": "LENOVO IdeaPad Slim 3",
+        "overview": "Computador Portátil LENOVO 15,6\" Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB - Gris",
         "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
+        "precio": "2'099,000",
+        "title": "IdeaPad Slim 3",
     },
     {
-        "id": 299051,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
+        "id": 3,
+        "marca": "ASUS",
+        "original_title": "ASUS",
+        "overview": "Computador Portátil ASUS Vivobook Go 15.6\" Pulgadas E1504GA - Intel Core i3 - RAM 8GB - Disco SSD 512 GB - Negro",
         "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
+        "precio": "1'499,000",
+        "title": "ASUS vivobook",
     },
     {
-        "id": 299052,
+        "id": 4,
         "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
+        "original_title": "HP Dq5005la",
+        "overview": "Computador Portátil HP 14\" Pulgadas Dq5005la INTEL Core i5 - RAM 12GB - Disco SSD 512GB - Plata",
         "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
-    },
-    {
-        "id": 299052,
+        "precio": "2'199,000",
+        "title": "HP Dq5005la",
+    },{
+        "id": 5,
+        "marca": "ASUS",
+        "original_title": "ASUS Vivobook Go OLED",
+        "overview": "Computador Portátil ASUS Vivobook Go OLED 15.6\" Pulgadas E1504FA - AMD Ryzen 5 - RAM 16GB - Disco SSD 512 GB - Negro",
+        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
+        "precio": "2'349,000",
+        "title": "ASUS Vivobook Go OLED",
+    },{
+        "id": 6,
         "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
+        "original_title": "ASUS Vivobook Go OLED",
+        "overview": "Computador Portátil ASUS Vivobook Go 15.6\" Pulgadas E1504FA - AMD Ryzen 5 - RAM 8GB - Disco SSD 512 GB - Negro",
         "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
-    },
-    {
-        "id": 299052,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
+        "precio": "1'899,000",
+        "title": "ASUS Vivobook Go OLED",
+    },{
+        "id": 7,
+        "marca": "ACER",
+        "original_title": "ACER ASPIRE 5",
+        "overview": "Computador Portátil ACER ASPIRE 5 15.6\" Pulgadas 55HE Intel Core i5 - RAM 8GB - Disco SSD 512GB - Azul",
         "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
+        "precio": "2'199,000",
+        "title": "ACER ASPIRE 5",
     },
-    {
-        "id": 299052,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
-        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
-    },
-    {
-        "id": 299052,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
-        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
-    },
-    {
-        "id": 299052,
-        "marca": "Hewlett-Packard",
-        "original_title": "HP 245 G7",
-        "overview": "Procesador AMD Ryzen 3 3250U (2.6GHz up to 3.5GHz) Caché 4MB Memoria Ram 4GB 2400MHz DDR4 Disco sólido SSD 480GB M.2 SATA    Pantalla 14″ HD (1366 x 768) con WLED HD SVA antirreflectante",
-        "popularity": 3741.062,
-        "poster_path": "https://pcsystemcolombia.com/wp-content/uploads/2021/02/HP-245-G7-Ryzen-3-3250U.jpg",
-        "precio": "1'200,000",
-        "title": "HP 245 G7",
-    },
-
 ]
 
-
-
-
-async function fetchMovies() {
-    const API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1M2ZmNjljNmRiM2YxMjgxZTk2ZTRlODQ5ZWRhNmQ2NSIsInN1YiI6IjU2YzRhZmU1YzNhMzY4MGQzZTAwMDIyMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-TqKfzJ2O4yVBYI0aiaUDgkg_WDRhOoRfnC5U-QE2SU";
-    const url = "https://api.themoviedb.org/3/movie/popular?language=es-ES";
-    try {
-        const response = await fetch(url, {
-            headers: {
-                Authorization: `Bearer ${API_KEY}`
-            }
-        });
-        if (!response.ok) {
-            throw new Error(`API error: ${response.statusText}`);
-        }
-        const data = await response.json();
-        console.log(data.results);
-        return data.results;
-    } catch (error) {
-        console.error('Error al cargar las películas:', error);
-        throw error; // Re-lanzar para manejo externo si es necesario
-    }
-}
-
-function createMovieElement(movie) {
-    const movieElement = document.createElement('div');
-    movieElement.classList.add('col-md-3', 'col-sm-6', 'ml-3', 'card-container');
-    movieElement.innerHTML = `
+function createPcElement(pc) {
+    const pcElement = document.createElement('div');
+    pcElement.classList.add('col-md-3', 'card-container');
+    //'col-sm-6', 'ml-3',
+    pcElement.innerHTML = `
       <div class="card" style="width: 20rem;">
         <div class="card-img-container">
-          <img src="${movie.poster_path}" class="card-img-top" alt="${movie.title}">
+          <img src="${pc.poster_path}" class="card-img-top" alt="${pc.title}">
         </div>
         <div class="card-body">
-          <h5 class="card-title">${movie.title}</h5>
-          <p class="card-text text-justify">${movie.overview}</p>
+          <h5 class="card-title">${pc.title}</h5>
+          <p class="card-text text-justify">${pc.overview}</p>
           <div class="card-body text-center">
-            <button class="btn btn-primary sinopsis-btn" data-id="${movie.id}">Sinopsis</button>
+            <button class="btn btn-primary sinopsis-btn" data-id="${pc.id}">Sinopsis</button>
           </div>
         </div>
       </div>
     `;
-    movieElement.querySelector('.sinopsis-btn').addEventListener('click', function() {
-        showModal(movie);
+    
+    pcElement.querySelector('.sinopsis-btn').addEventListener('click', function() {
+        showModal(pc);
     });
-    return movieElement;
+    return pcElement;
 }
 
-function showModal(movie) {
-    // Aquí llenas la información del modal con los datos de la película
-    document.getElementById('modalTitle').textContent = "Modelo: " +movie.title;
-    document.getElementById('modalFechaLanzamiento').textContent = "Precio: " + movie.precio;
-    document.getElementById('modalPuntuacion').textContent = "Marca: " + movie.marca;
-    document.getElementById('modalPoster').src = movie.poster_path;
-    document.getElementById('modalPoster').alt = movie.title;
-    document.getElementById('modalOverview').textContent = movie.overview;
+function showModal(pc) {
+    // Aquí llenas la información del modal con los datos del pc
+    document.getElementById('modalModelo').textContent = "Modelo: " + pc.title;
+    document.getElementById('modalPrecio').textContent = "Precio: " + pc.precio;
+    document.getElementById('modalMarca').textContent = "Marca: " + pc.marca;
+    document.getElementById('modalPoster').src = pc.poster_path;
+    document.getElementById('modalPoster').alt = pc.title;
+    document.getElementById('modalOverview').textContent = pc.overview;
     // Muestra el modal
-    document.getElementById('movieModal').style.display = 'flex';
+    document.getElementById('pcModal').style.display = 'flex';
 }
 
 // Función para cerrar el modal
 document.querySelector('.close-button').addEventListener('click', function() {
-    document.getElementById('movieModal').style.display = 'none';
+    document.getElementById('pcModal').style.display = 'none';
 });
 
-
-
-async function loadPopularMovies() {
+async function loadPopularPc() {
     try {
-        //const movies = await fetchMovies();
-        const movies = movies_quemado;
-        const moviesContainer = document.querySelector('.row');
-        moviesContainer.innerHTML = ''; // Limpiar el contenedor para nuevas tarjetas
-        movies.forEach(movie => {
-            const movieElement = createMovieElement(movie);
-            moviesContainer.appendChild(movieElement);
+        //const lista = await fetchMovies();
+        const lista = pc_portatiles;
+        const pcContainer = document.querySelector('.row');
+        pcContainer.innerHTML = ''; // Limpiar el contenedor para nuevas tarjetas
+        lista.forEach(pc => {
+            const pcElement = createPcElement(pc);
+            pcContainer.appendChild(pcElement);
         });
     } catch (error) {
         console.error('Error al mostrar las películas:', error);
@@ -190,4 +123,4 @@ async function loadPopularMovies() {
 }
 
 // cuando la pagina este cargando llamamos a la funcion principal que crea los elementos
-document.addEventListener('DOMContentLoaded', loadPopularMovies);
+document.addEventListener('DOMContentLoaded', loadPopularPc);

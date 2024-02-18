@@ -84,15 +84,19 @@
 
     </div>
     <!-- Modal Structure -->
-    <div id="movieModal" class="modal">
+    <div id="pcModal" class="modal container-fluid">
       <div class="modal-content">
         <span class="close-button">&times;</span>
-        <h2 id="modalTitle"></h2>
-        <h2 id="modalFechaLanzamiento"></h2>
-        <h2 id="modalPuntuacion"></h2>
-        <div class="modal-body"> <!-- Nuevo contenedor para imagen y texto -->
-          <img id="modalPoster" src="" alt="Poster" style="width: 300px; height: auto;">
-          <p id="modalOverview" style="color:#aaa"></p>
+        <h2 id="modalModelo"></h2>
+        <h2 id="modalPrecio"></h2>
+        <h2 id="modalMarca"></h2>
+        <div class="modal-body row"> <!-- Nuevo contenedor para imagen y texto -->
+          <div class="col">
+            <img id="modalPoster" src="" alt="Poster" >
+          </div>
+          <div class="col">
+            <p id="modalOverview" style="color:#aaa"></p>
+          </div>
         </div>
       </div>
     </div>
